@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="blog.master.cs" Inherits="BlogX.blog" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+    
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+
+    
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+    <script src="fontawesome/js/all.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+      
+    <a class="navbar-brand" href="homepage.aspx"><b>WELCOME TO BLOG_X</b></a>
+      
+    <asp:button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </asp:button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+
+
+
+        <li class="nav-item">
+            <asp:LinkButton ID="LinkButton1" CssClass="nav-link"  runat="server" OnClick="LinkButton1_Click">Home</asp:LinkButton>
+          
+        </li>
+
+        <li class="nav-item">
+            <asp:LinkButton ID="LinkButton2" CssClass="nav-link"  runat="server" OnClick="LinkButton2_Click">Show Blogs</asp:LinkButton>
+          
+        </li>
+
+        <li class="nav-item">
+            <asp:LinkButton ID="LinkButton3" CssClass="nav-link"   runat="server" OnClick="LinkButton3_Click">Write a Blog</asp:LinkButton>
+          
+        </li>
+
+          
+
+          <li class="nav-item">
+              <asp:LinkButton ID="LinkButton5" CssClass="nav-link"  runat="server" OnClick="LinkButton5_Click">User LogIn</asp:LinkButton>
+  
+            </li>
+
+          <li class="nav-item">
+              <asp:LinkButton ID="LinkButton6" CssClass="nav-link"   runat="server" OnClick="LinkButton6_Click">Register</asp:LinkButton>
+  
+            </li>
+
+          <li class="nav-item">
+    <asp:LinkButton ID="LinkButton16" CssClass="nav-link"  runat="server" OnClick="LinkButton16_Click">Hello User</asp:LinkButton>
+  
+            </li>
+          
+
+          <li class="nav-item">
+    <asp:LinkButton ID="LinkButton17" CssClass="nav-link"  runat="server" OnClick="LinkButton17_Click">Log Out</asp:LinkButton>
+  
+            </li>
+
+        
+
+
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+       
+            <!-- Footer -->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <br />
+                            <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click">Post Inventory</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton15" runat="server" OnClick="LinkButton15_Click">User Management</asp:LinkButton>
+                            &nbsp;
+                            <p>
+                 <asp:Button ID="Button1" class="btn btn-lg btn-block btn-dark" runat="server" Text="My Github" OnClick="Button1_Click" /></p>
+                        </p>
+                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-dark" runat="server" Text="Visit Me on Facebook"  OnClick="Button2_Click" />
+            <br />
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <br />
+                        <p style="color:#000000;">&copy All right Reversed. Avishek Roy's Blogging Site </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+
+</div>
+        
+
+
+    </form>
+</body>
+</html>

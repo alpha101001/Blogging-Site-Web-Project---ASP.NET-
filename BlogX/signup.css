@@ -1,0 +1,21 @@
+﻿
+body {
+    background-image: url('images/sign_up_bg_img.png');
+
+}
+
+
+.container-fluid {
+    background-color: transparent;
+}
+
+.card {
+    background-color: transparent;
+}
+h4{
+    color: rgb(225, 48, 48);
+}
+
+h6{
+    color: rgb(37, 220, 220);
+}

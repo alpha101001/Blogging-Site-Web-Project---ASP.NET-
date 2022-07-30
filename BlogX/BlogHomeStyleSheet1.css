@@ -1,0 +1,10 @@
+﻿
+body {
+    background-image: url('images/sign_up_bg_img.png');
+}
+
+.form-control {
+    background-image: url('images/technology-662833_1280.jpg');
+    width: 500px;
+    height: 500px
+}
